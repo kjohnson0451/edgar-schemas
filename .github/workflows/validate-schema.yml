@@ -1,0 +1,10 @@
+name: validate-schema
+on: [pull_request, push]
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check schemas against the JSON Schema metaschema
+        run: pipx run --spec check-jsonschema==0.38.2 check-jsonschema --check-metaschema schemas/*.json
