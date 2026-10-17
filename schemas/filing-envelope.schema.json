@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/<org>/edgar-schemas/schemas/filing-envelope.schema.json",
+  "$id": "https://github.com/kjohnson0451/edgar-schemas/schemas/filing-envelope.schema.json",
   "title": "FilingEnvelope",
   "description": "The payload edgar-fetcher POSTs to edgar-parser. Intentionally both the current wire format and the future queue-message format.",
   "type": "object",
