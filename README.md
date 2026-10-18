@@ -13,7 +13,7 @@ Consumers fetch a pinned tag at build time (not vendored) and codegen a
 native type from it:
 
 ```
-curl -sL https://raw.githubusercontent.com/kjohnson0451/edgar-schemas/v1.0.0/schemas/filing-envelope.schema.json -o schema.json
+curl -sL https://raw.githubusercontent.com/kjohnson0451/edgar-schemas/<tag>/schemas/filing-envelope.schema.json -o schema.json
 ```
 
 - Go: `go-jsonschema`
@@ -21,5 +21,5 @@ curl -sL https://raw.githubusercontent.com/kjohnson0451/edgar-schemas/v1.0.0/sch
 
 ## Versioning
 
-Plain git tags (`v1.0.0`, ...). Tags pin the whole repo, not individual
+Plain git tags (`vMAJOR.MINOR.PATCH`). Tags pin the whole repo, not individual
 files. Bump on any schema change consumers need to pick up.
